@@ -1,0 +1,25 @@
+{
+  "namespace": "com.google.cloud.solutions.beamavro.beans",
+  "type": "record",
+  "name": "OrderDetails",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "timestamp",
+      "type" : {
+        "type" : "long",
+        "logicalType" : "timestamp-millis"
+      }
+    },
+    {
+      "name": "dt",
+      "type" : {
+        "type": "int",
+        "logicalType" : "date"
+      }
+    }
+  ]
+}

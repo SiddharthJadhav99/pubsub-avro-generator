@@ -1,0 +1,17 @@
+--runner=DataflowRunner
+--jobName="pubsubavro"
+--targetTableProject="dmgcp-del-108"
+--airflowBucket="gs://training_freshers"
+--datasetName="training_freshers"
+--project="dmgcp-del-108"
+--tempLocation=gs://training_freshers/SiddharthJadhav/Temp
+--region=us-central1
+--stagingLocation=gs://training_freshers/SiddharthJadhav/Staging
+--subnetwork="https://www.googleapis.com/compute/v1/projects/dm-network-host-project/regions/us-central1/subnetworks/subnet-dm-delivery-us-central1"
+--workerMachineType="n1-standard-1"
+--maxNumWorkers=2
+--serviceAccount="sa-dataflow@dmgcp-del-108.iam.gserviceaccount.com"
+--difPropFile="C:\Users\Siddharth.Jadhav\Documents\GitLab\dataingestion\dataflow\java\sourcecode\dataingestion\src\main\resources\config\pubsub-avro\task_avro.properties"
+--jobPropFile="C:\Users\Siddharth.Jadhav\Documents\GitLab\dataingestion\dataflow\java\sourcecode\dataingestion\src\main\resources\config\pubsub-avro\job_avro.properties"
+--runJobId="10000"
+--usePublicIps=false
